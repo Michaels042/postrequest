@@ -30,6 +30,7 @@ app.get("/meals", (req, res) => {
   res.send(mealRations);
 });
 
+// a third object is being pushed into yhe array of mealRations
 app.post("/meals", (req, res) => {
   console.log(req.body);
   mealRations.push(req.body);
